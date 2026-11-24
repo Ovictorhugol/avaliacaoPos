@@ -28,24 +28,7 @@ Projeto acadêmico em desenvolvimento com HTML5, CSS3, Bootstrap 5 e JavaScript.
 
 3. Acesse [http://localhost:5500](http://localhost:5500).
 
-Para encerrar o servidor, pressione **Ctrl+C** no terminal. Depois de editar um arquivo, salve e atualize o navegador. O servidor está configurado com o cache desativado.
 
-No PowerShell, caso a execução de `npm` seja bloqueada, use `npm.cmd install` e `npm.cmd start`.
-
-## Estrutura
-
-```text
-.
-├── index.html
-├── Forms.html
-├── assets/
-│   ├── css/style.css
-│   ├── js/script.js
-│   ├── img/
-│   └── vendor/bootstrap/
-├── package.json
-├── package-lock.json
-└── README.md
 ```
 
 - `index.html`: página inicial com menu de navegação e referências ao Bootstrap, CSS e JavaScript.
@@ -56,11 +39,3 @@ No PowerShell, caso a execução de `npm` seja bloqueada, use `npm.cmd install` 
 - `assets/vendor/bootstrap/`: CSS, JavaScript e licença MIT do Bootstrap.
 - `package.json`: dependência de desenvolvimento e comando de execução.
 - `package-lock.json`: versões registradas das dependências instaladas.
-
-## Desenvolvimento
-
-Edite os arquivos HTML para criar o conteúdo, `style.css` para personalizar a aparência e `script.js` para implementar os comportamentos.
-
-Ao criar novas páginas, inclua os links para os estilos e scripts necessários. Atualmente, `Forms.html` ainda não carrega os arquivos compartilhados da página inicial.
-
-O Bootstrap está incluído no projeto e não exige conexão com a internet para carregar no navegador. A instalação inicial das dependências npm requer acesso ao registro de pacotes.
