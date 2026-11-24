@@ -1,17 +1,66 @@
 # Meu trabalho
 
-Base com HTML5, CSS3, Bootstrap 5 e JavaScript.
+Projeto acadêmico em desenvolvimento com HTML5, CSS3, Bootstrap 5 e JavaScript. O Node.js executa o servidor local de arquivos estáticos.
 
-- `index.html`: estrutura da pagina.
-- `assets/css/style.css`: estilos (vazio).
-- `assets/js/script.js`: interatividade (vazio).
-- `assets/img/`: imagens.
-- `assets/vendor/bootstrap/`: Bootstrap local e sua licenca MIT.
+## Tecnologias
 
-Abra `index.html` no navegador ou execute:
+- **HTML5:** estruturação das páginas.
+- **CSS3:** estilização e personalização.
+- **Bootstrap 5.3.8:** componentes, grid e responsividade, com arquivos locais.
+- **JavaScript:** interatividade e manipulação de elementos.
+- **http-server:** servidor de desenvolvimento executado pelo Node.js.
 
-```powershell
-python -m http.server 5500 --bind 127.0.0.1
+## Como executar
+
+É necessário ter Node.js e npm instalados.
+
+1. Abra o terminal na pasta do projeto e instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+2. Inicie o servidor:
+
+   ```bash
+   npm start
+   ```
+
+3. Acesse [http://localhost:5500](http://localhost:5500).
+
+Para encerrar o servidor, pressione **Ctrl+C** no terminal. Depois de editar um arquivo, salve e atualize o navegador. O servidor está configurado com o cache desativado.
+
+No PowerShell, caso a execução de `npm` seja bloqueada, use `npm.cmd install` e `npm.cmd start`.
+
+## Estrutura
+
+```text
+.
+├── index.html
+├── Forms.html
+├── assets/
+│   ├── css/style.css
+│   ├── js/script.js
+│   ├── img/
+│   └── vendor/bootstrap/
+├── package.json
+├── package-lock.json
+└── README.md
 ```
 
-Acesse http://localhost:5500. A pagina inicia em branco.
+- `index.html`: página inicial com menu de navegação e referências ao Bootstrap, CSS e JavaScript.
+- `Forms.html`: segunda página, atualmente com conteúdo de teste.
+- `assets/css/style.css`: estilos personalizados.
+- `assets/js/script.js`: arquivo para adicionar interatividade, atualmente vazio.
+- `assets/img/`: pasta para imagens.
+- `assets/vendor/bootstrap/`: CSS, JavaScript e licença MIT do Bootstrap.
+- `package.json`: dependência de desenvolvimento e comando de execução.
+- `package-lock.json`: versões registradas das dependências instaladas.
+
+## Desenvolvimento
+
+Edite os arquivos HTML para criar o conteúdo, `style.css` para personalizar a aparência e `script.js` para implementar os comportamentos.
+
+Ao criar novas páginas, inclua os links para os estilos e scripts necessários. Atualmente, `Forms.html` ainda não carrega os arquivos compartilhados da página inicial.
+
+O Bootstrap está incluído no projeto e não exige conexão com a internet para carregar no navegador. A instalação inicial das dependências npm requer acesso ao registro de pacotes.
