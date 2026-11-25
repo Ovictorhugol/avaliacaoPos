@@ -1,0 +1,26 @@
+{
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "on"
+    },
+    "editor.quickSuggestionsDelay": 10,
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.tabCompletion": "on",
+    "editor.inlineSuggest.enabled": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "html": "html"
+    },
+    "[html]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "[css]": {
+        "editor.suggest.insertMode": "replace"
+    },
+    "[javascript]": {
+        "editor.suggest.insertMode": "replace"
+    }
+}
